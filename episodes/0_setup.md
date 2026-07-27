@@ -7,34 +7,24 @@ exercises: 0
 :::::::::::::::::::::::::::::::::::::: questions 
 
 - What software do I need to have installed?
-- Do I have a GitHub account?
+- Do I have a GitLab account?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
 - Install VS Code and other needed software
-- Connect VS Code to GitHub
+- Connect VS Code to code.ornl.gov
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: callout
 
-If you are participating in this workshop remotely (e.g. over Zoom), it is highly recommended that you use two screens: 1 screen with the remote meeting, to see the instructor sharing their screen, and 1 screen with your applications. You will need to have VS Code and a web browser open to GitHub.com in order to follow along.
+If you are participating in this workshop remotely (e.g. over Zoom), it is highly recommended that you use two screens: 1 screen with the remote meeting, to see the instructor sharing their screen, and 1 screen with your applications. You will need to have VS Code and a web browser open to https://code.ornl.gov in order to follow along.
 
 ![Example Screen setup](fig/learner-setup-screenshot.png)
 
 :::::::::::::::::::::::::::::::::::::
-
-## Create a GitHub account
-
-If you do not already have a GitHub account, visit [github.com](https://github.com) to create one.
-
-You can refer to [this doc page](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github) for further instructions about creating a GitHub account.
-
-If you already have a GitHub account, please verify that you can sign in, and take note of the email(s) associated with the account.
-
-It is strongly recommended that you set up 2FA for your GitHub account, and to use a password manager.
 
 ## Software Installations
 
@@ -64,11 +54,10 @@ You should have a Bash terminal. If you are on a Windows, you will have a Bash t
 
 Rather than using a seperate command line application, you will be using the Terminal in VS Code. To learn more about using the Terminal in VS Code, refer to [these docs](https://code.visualstudio.com/docs/terminal/basics).
 
-## Connect VS Code to GitHub
+## Connect VS Code to code.ornl.gov
 
-Please refer to [these instructions](https://code.visualstudio.com/docs/sourcecontrol/intro-to-git#_set-up-git-in-vs-code) to sign in to GitHub from VS Code.
-
-Optionally, you can install the GitHub extension, and follow [these instructions](https://code.visualstudio.com/docs/sourcecontrol/github) to sign into GitHub.
+Please refer to [these instructions](https://docs.gitlab.com/editor_extensions/visual_studio_code/setup/) to sign in to GitLab from VS Code. Note that for the GitLab instance, you must
+use https://code.ornl.gov.
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 

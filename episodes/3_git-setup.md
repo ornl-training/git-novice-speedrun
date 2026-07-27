@@ -63,7 +63,7 @@ If you have different output, then you may have your Git configured already. If 
 
 First, we will tell Git our user name and email.
 
-Please note: You need to use the same email address in your Git configuration in the shell as you entered into GitHub when you created your GitHub account. Later in the lesson we will be using GitHub and the email addresses need to match. If you are concerned about privacy, please review [GitHub's instructions for keeping your email address private](https://help.github.com/articles/keeping-your-email-address-private/).
+Please note: You need to use the same email address in your Git configuration in the shell as you entered into GitLab when you signed in. Later in the lesson we will be using GitLab and the email addresses need to match.
 
 Type these two commands into your shell, using your own name and email:
 
@@ -146,14 +146,14 @@ must be manually configured have the same main branch name as most cloud service
 For versions of Git prior to 2.28, the change can be made on an individual repository level. Note that if this value is unset in your local Git 
 configuration, the `init.defaultBranch` value defaults to `master`.
 
-Since we are creating the repository on GitHub, the default branch name for the `multiverse` repo will be `main`. Configure this setting if you plan on creating git repositories locally first.
+Since we are creating the repository on GitLab, the default branch name for the `multiverse` repo will be `main`. Configure this setting if you plan on creating git repositories locally first.
 
 ::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
 - Version control helps track changes to files and projects
-- Git and GitHub are not the same
+- Git and GitLab are not the same
 - Git commands are written as `git verb options`
 - When we use Git on a new computer for the first time, we need to configure a few things
 

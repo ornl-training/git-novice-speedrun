@@ -1,48 +1,46 @@
 ---
-title: "Pull Requests"
+title: "Merge Requests"
 teaching: 15
 exercises: 0
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
 
-- What are pull requests for?
-- How can I make a pull request?
+- What are merge requests for?
+- How can I make a merge request?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
 - Define the terms fork, clone, origin, remote, upstream
-- Understand how to make a pull request and what they are useful for
+- Understand how to make a merge request and what they are useful for
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 
 :::::::::::::::: callout
 
-Pull requests are a great way to collaborate with others using github.
+Merge requests are a great way to collaborate with others using GitLab.
 Instead of making changes directly to a repository you can suggest changes to a repo.
 This can be useful if you don't have permission to modify a repository directly or
 you want someone else to review your changes.
 
 :::::::::::::::::::::
 
-On GitHub, in your `multiverse` repo, **click on the "Pull Requests" tab**. 
+On GitLab, in your `multiverse` repo, **click on the "Merge Requests" tab**. 
 
-Then **click "New pull request"**. Alternatively, GitHub will see your new branch with recent changes and will prompt you to "Compare & pull request". Click this button to also be taken to the new pull request page.
-
-![Open a Pull Request on GitHub for branch heimdall-aware](fig/github-open-pr.png)
+Then **click "Create merge request"**. Alternatively, GitLab will see your new branch with recent changes and will prompt you to create a Merge Request. Click this button to also be taken to the new merge request page.
 
 Make sure that the "base" branch is `main` and the "compare" branch is `heimdall-aware`.
 
 Next, we need to give our PR a title. By default, your PR will get the title from your last commit. We can leave this as is.
 
-**Click "Create pull request"**.
+**Click "Compare branches and continue"**.
 
-![Pull Request is created](fig/github-pr-opened.png)
+**Click "Create merge request"**.
 
-Your `multiverse` repo should now have 1 pull request. This is the phase where you would normally request a reviewer, who can leave comments on your code. In repos that you do not own, your PR will need to be approved by a codeowner before you can merge it. Since you are the codeowner, we can go ahead and **click "Merge pull request"**. Confirm & complete the merge.
+Your `multiverse` repo should now have 1 merge request. This is the phase where you would normally request a reviewer, who can leave comments on your code. In repos that you do not own, your PR will need to be approved by a codeowner before you can merge it. Since you are the codeowner, we can go ahead and **click "Merge"**. Confirm & complete the merge.
 
 Go back to the "Code" tab and make sure you are on the "main" branch. You should now see an "asgard.txt" file.
 
@@ -60,7 +58,7 @@ ee67c8b Implement counterattack strategy
 f537d84 Initial commit
 ```
 
-The analysis file is not on "main" yet. This is because we need to first pull the changes we made with the Pull Request from the remote repository.
+The analysis file is not on "main" yet. This is because we need to first pull the changes we made with the Merge Request from the remote repository.
 
 ```bash
 $ git pull
@@ -137,10 +135,10 @@ git branch -D heimdall-blind
 Deleted branch heimdall-blind (was 59b9bab).
 ```
 
-Finally, we can also delete the heimdall-aware branch **on GitHub. Click on "Branches"**, and to delete the `heimdall-aware` branch **click the trashcan icon** to the right of the branch name.
+Finally, we can also delete the heimdall-aware branch **on GitLab. Click on "Code -> Branches"**, and to delete the `heimdall-aware` branch **click the trashcan icon** to the right of the branch name.
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
-- Pull requests suggest changes to repos where you don't have privileges
+- Merge requests suggest changes to repos where you don't have privileges
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::

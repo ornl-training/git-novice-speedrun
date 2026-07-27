@@ -1,19 +1,19 @@
 ---
-title: "Create a GitHub Repository"
+title: "Create a GitLab Repository"
 teaching: 10
 exercises: 0
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
 
-- How do I create a new repository on GitHub?
+- How do I create a new repository on GitLab?
 - How do I clone the repository to my local computer?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- Create `multiverse` repository on GitHub
+- Create `multiverse` repository on GitLab
 - Clone the `multiverse` repository using VS Code
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
@@ -24,45 +24,39 @@ When the workshop begins, you should be sharing your screen,
 and instruct the learners to make sure their setup looks like yours:
 
 1. A new VS Code window is open (taking up the left 75% of the screen)
-2. A browser window with GitHub is open (taking up the right 75% of the screen)
+2. A browser window with https://code.ornl.gov is open (taking up the right 75% of the screen)
 
 In your browser window, you can have a second tab open with all images for
 this workshop, available at [this URL](http://jennajordan.me/git-novice-speedrun/instructor/images.html)
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Create a new repo on GitHub
+## Create a new repo on GitLab
 
-The first thing we need to do is create a new repository. While you can create repositories locally, and never even connect the local repo to a remote repo (hosted on a site like GitHub), the simplist and most common pattern to first create a new repo on GitHub, and then clone that repo to your local computer.
+The first thing we need to do is create a new repository. While you can create repositories locally, and never even connect the local repo to a remote repo (hosted on a site like GitLab), the simplist and most common pattern to first create a new repo on GitLab, and then clone that repo to your local computer.
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: instructor
 
-The documentation for creating a new repo on GitHub is available [here](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository)
+The documentation for creating a new repo on GitLab is available [here](https://docs.gitlab.com/user/project/repository/#create-a-repository)
 
 If you have taught this lesson before, make sure that you have deleted your existing `multiverse` repo.
-The documentation for deleting a repo on GitHub is available [here](https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository)
+The documentation for deleting a repo on GitLab is available [here](https://docs.gitlab.com/user/project/working_with_projects/#delete-a-project)
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-You should already be signed in to GitHub. You can create a new repo from anywhere on the site by clicking on the "+" icon in the upper right, and then clicking "New Repository":
+You should already be signed in to GitLab. You can create a new repo from anywhere on the site by clicking on the "+" icon in the upper right, and then clicking "New project/repository":
 
-![Create a new repo from anywhere in GitHub](fig/github-create-repo.png)
+Select "Create a blank project"
 
-Select your Github username as the "owner". 
+Type `multiverse` for the project name. 
 
-Type `multiverse` for the repository name. 
+Under "Project URL", select your username as the owner.
 
-Check the box next to "Add a README file".
+Leave all other options as the default - your repo should be private and initialized with a README.
 
-Leave all other options as the default - your repo should be public, no gitignore selected, no license selected, and no template selected.
-
-![Create the multiverse repo in GitHub](fig/github-create-multiverse-repo.png)
-
-Finally, click the green "Create Repository" button at the bottom right.
+Finally, click the blue "Create project" button at the bottom.
 
 You will be redirected to your newly created and empty `multiverse` repo.
-
-![Your new multiverse repo on GitHub](fig/github-new-multiverse-repo.png)
 
 ## Clone your multiverse repo to your local computer
 
@@ -70,15 +64,13 @@ Now that the `multiverse` repo has been created, we can "clone" it (get a local 
 
 Make sure you have a new VS Code window open. If you already have a repo/folder open in VS Code, go to the "File" menu and click "New window".
 
-In your new VS Code window, go to the "Source Control" pane (the 3rd one down). Click "Clone Repository", and then click "Clone from GitHub".
-
-![Clone a GitHub repo in VS Code](fig/vscode-clone-repo.png)
+In your new VS Code window, go to the "Source Control" pane (the 3rd one down). Click "Clone Repository", and then click "Clone from GitLab".
 
 If you don't immediately see your `multiverse` repo, you can search for it by typing "multiverse" in the search box. When you see your `multiverse` repo (it should have your username in the URL), click it.
 
 ![Clone your multiverse repo via VS Code](fig/vscode-clone-multiverse-repo.png)
 
-You will now need to choose where on your local computer the `multiverse` repo will live. You can choose any easily accessible location, such as the "Desktop" folder. It is standard practice to save all local repos in a folder named "GitHub" in your "Documents" folder.
+You will now need to choose where on your local computer the `multiverse` repo will live. You can choose any easily accessible location, such as the "Desktop" folder. It is standard practice to save all local repos in a folder named "GitLab" in your "Documents" folder.
 
 Click "Open" when prompted to open the newly cloned `multiverse` repo.
 
@@ -101,7 +93,7 @@ You should now have your empty `multiverse` repo open, with a Bash terminal open
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
-- Create a new repository on GitHub
+- Create a new repository on GitLab
 - Clone the repository to your local computer
 - Open the terminal in VS Code
 

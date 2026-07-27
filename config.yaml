@@ -17,13 +17,13 @@ carpentry: 'incubator'
 # carpentry_description: "Custom Carpentry"
 
 # Overall title for pages.
-title: 'Intro to Git & GitHub (Speedrun edition)'
+title: 'Intro to Git & GitLab (Speedrun edition)'
 
 # Date the lesson was created (YYYY-MM-DD, this is empty by default)
 created: '2025-03-08'
 
 # Comma-separated list of keywords for the lesson
-keywords: 'git, GitHub, branches, PRs'
+keywords: 'git, GitLab, branches, PRs'
 
 # Life cycle stage of the lesson
 # possible values: pre-alpha, alpha, beta, stable
@@ -33,13 +33,13 @@ life_cycle: 'alpha'
 license: 'CC-BY 4.0'
 
 # Link to the source repository for this lesson
-source: 'https://github.com/jenna-jordan/git-novice-speedrun'
+source: 'https://github.com/ornl-training/git-novice-speedrun'
 
 # Default branch of your lesson
 branch: 'main'
 
 # Who to contact if there are any issues
-contact: 'jenna.jrdn@gmail.com'
+contact: 'dugganjw@ornl.gov'
 
 # Navigation ------------------------------------------------
 #
@@ -72,9 +72,8 @@ episodes:
 - 4_track-changes.md
 - 5_push-changes.md
 - 6_branches.md
-- 7_pull-request.md
+- 7_merge-request.md
 - 8_conflicts.md
-- 9_practice.md
 
 # Information for Learners
 learners: 
@@ -91,5 +90,5 @@ profiles:
 # sandpaper and varnish versions) should live
 
 carpentry_description: Combines the SWC git novice lesson, Incubator git branches
-  lesson, and LC GitHub lesson for a 90 min lesson introducing learners to working
-  with git, GitHub, branches, and PRs
+  lesson, and a custom GitLab lesson for a 90 min lesson introducing learners to working
+  with git, GitLab, branches, and PRs

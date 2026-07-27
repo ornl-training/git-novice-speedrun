@@ -308,7 +308,7 @@ Loki decides the version of events where Heimdall is aware should be part of the
 
 We will merge the `heimdall-aware` branch into our `main` branch via a Pull Request so we can use it for our work going forward.
 
-Before we can create a Pull Request on GitHub, we need to push this branch to the remote repo
+Before we can create a Merge Request on GitLab, we need to push this branch to the remote repo
 
 Let's switch to & push the heimdall-aware branch:
 
@@ -329,7 +329,7 @@ To have this happen automatically for branches without a tracking
 upstream, see 'push.autoSetupRemote' in 'git help config'.
 ```
 
-While our main branch was already on both our local and remote repositories, our heimdall-aware branch is only on our local computer. You can check this by going to GitHub and searching for the heimdall-aware branch - you won't find it!
+While our main branch was already on both our local and remote repositories, our heimdall-aware branch is only on our local computer. You can check this by going to GitLab and searching for the heimdall-aware branch - you won't find it!
 
 We need to use the `-u` flag in our command and specify the destination branch.
 
@@ -364,9 +364,7 @@ simply use `git push -u origin <branch-name>`.
 
 ::::::::::::::::::::::::
 
-Now, we can go back to GitHub and verify that we have a new branch named heimdall-aware.
-
-![GitHub has the branch heimdall-aware](fig/github-branch-pushed.png)
+Now, we can go back to GitLab and verify that we have a new branch named heimdall-aware.
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 

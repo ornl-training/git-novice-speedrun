@@ -1,5 +1,5 @@
 ---
-title: "Introduction to Git & GitHub"
+title: "Introduction to Git & GitLab"
 teaching: 10
 exercises: 0
 ---
@@ -7,14 +7,14 @@ exercises: 0
 ::::::::::::::::::::::::::::::::::::::: objectives
 
 - recognize why version control is useful
-- distinguish between Git and GitHub
+- distinguish between Git and GitLab
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::: questions
 
 - What is Git?
-- What is GitHub?
+- What is GitLab?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -24,9 +24,9 @@ When the workshop begins, you should be sharing your screen,
 and instruct the learners to make sure their setup looks like yours:
 
 1. A new VS Code window is open (taking up the left 75% of the screen)
-2. A browser window with GitHub is open (taking up the right 75% of the screen)
+2. A browser window with https://code.ornl.gov is open (taking up the right 75% of the screen)
 
-Instruct learners to sign in to GitHub if they have not already.
+Instruct learners to sign in to GitLab if they have not already.
 
 In your browser window, you can have a second tab open with all images for
 this workshop, available at [this URL](http://jennajordan.me/git-novice-speedrun/instructor/images.html)
@@ -53,9 +53,9 @@ There are many more reasons to use version control, and we'll explore some of th
 
 "Piled Higher and Deeper" by Jorge Cham, http://www.phdcomics.com
 
-## What are Git and GitHub?
+## What are Git and GitLab?
 
-We often hear the terms ***Git*** and ***GitHub*** used interchangeably but they are slightly different things.
+We often hear the terms ***Git*** and ***GitLab*** used interchangeably but they are slightly different things.
 
 ***Git*** is one of the most widely used version control systems in the world. It is a free, open source tool that can be downloaded to your local machine and used for logging all changes made to a group of designated computer files (referred to as a "git repository" or "repo" for short) over time. It can be used to control file versions locally by you alone on your computer, but is perhaps most powerful when employed to coordinate simultaneous work on a group of files shared among distributed groups of people.
 
@@ -63,7 +63,7 @@ Rather than emailing documents with tracked changes and some comments and renami
 
 Git was originally developed to help software developers work collaboratively on software projects, but it can be and is used for managing revisions to any file type on a computer system, including text documents and spreadsheets. Once installed, interaction with Git is done through the Command Prompt in Windows, or the Terminal on Mac/Linux. Since Word documents contain special formatting, Git unfortunately cannot version control those, nor can it version control PDFs, though both file types can be stored in Git repositories.
 
-***GitHub*** on the other hand is a popular website for hosting and sharing Git repositories remotely. It offers a web interface and provides functionality and a mixture of both free and paid services for working with such repositories. The majority of the content that GitHub hosts is open source software, though increasingly it is being used for other projects such as open access journals (e.g. [Journal of Open Source Software](https://joss.theoj.org/)), blogs, and regularly updated text books.  In addition to GitHub, there are other Git hosting services that offer many similar features such as [GitLab](https://about.gitlab.com/), [Bitbucket](https://bitbucket.org/) and [Gitee](https://gitee.com/).
+***GitLab*** on the other hand is a popular software for hosting and sharing Git repositories remotely. It offers a web interface and provides functionality and a mixture of both free and paid services for working with such repositories. The majority of the content that GitLab hosts is open source software, though increasingly it is being used for other projects such as open access journals (e.g. [Journal of Open Source Software](https://joss.theoj.org/)), blogs, and regularly updated text books.  In addition to GitLab, there are other Git hosting services that offer many similar features such as [GitHub](https://github.com/), [Bitbucket](https://bitbucket.org/) and [Gitee](https://gitee.com/).
 
 ### Visualizing Git
 
@@ -97,7 +97,7 @@ where `verb` is what we actually want to do and `options` is additional optional
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
 - Version control helps track changes to files and projects
-- Git and GitHub are not the same
+- Git and GitLab are not the same
 - Git commands are written as `git verb options`
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::

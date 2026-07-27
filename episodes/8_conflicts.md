@@ -138,7 +138,7 @@ the `main` branch, not the `loki-twist` branch.
 :::::::::::::::::::
 
 Now that we've added Loki's big reveal, we can merge this branch into the `main` branch. 
-We're going to do this merge in VS Code rather than through a Pull Request in GitHub this time.
+We're going to do this merge in VS Code rather than through a Merge Request in GitLab this time.
 
 First, let's switch to the `main` branch.
 
@@ -374,7 +374,7 @@ The repo owner should then create a Pull Request and merge their branch first.
 
 The other person should then create a Pull Request to merge their branch. They will get a merge conflict. 
 
-In VS Code, they can merge main into their branch and resolve the conflict, then push the commit with the resolved merge to GitHub. They should now be able to merge their branch into main as well.
+In VS Code, they can merge main into their branch and resolve the conflict, then push the commit with the resolved merge to GitLab. They should now be able to merge their branch into main as well.
 
 ::::::::::::::::::::::::::::::::
 
