@@ -37,7 +37,13 @@
     <loc>https://ornl-training.github.io/git-novice-speedrun/LICENSE.html</loc>
   </url>
   <url>
+    <loc>https://ornl-training.github.io/git-novice-speedrun/aio.html</loc>
+  </url>
+  <url>
     <loc>https://ornl-training.github.io/git-novice-speedrun/citation.html</loc>
+  </url>
+  <url>
+    <loc>https://ornl-training.github.io/git-novice-speedrun/images.html</loc>
   </url>
   <url>
     <loc>https://ornl-training.github.io/git-novice-speedrun/index.html</loc>
@@ -79,16 +85,34 @@
     <loc>https://ornl-training.github.io/git-novice-speedrun/instructor/LICENSE.html</loc>
   </url>
   <url>
+    <loc>https://ornl-training.github.io/git-novice-speedrun/instructor/aio.html</loc>
+  </url>
+  <url>
     <loc>https://ornl-training.github.io/git-novice-speedrun/instructor/citation.html</loc>
   </url>
   <url>
+    <loc>https://ornl-training.github.io/git-novice-speedrun/instructor/images.html</loc>
+  </url>
+  <url>
     <loc>https://ornl-training.github.io/git-novice-speedrun/instructor/index.html</loc>
+  </url>
+  <url>
+    <loc>https://ornl-training.github.io/git-novice-speedrun/instructor/instructor-notes.html</loc>
+  </url>
+  <url>
+    <loc>https://ornl-training.github.io/git-novice-speedrun/instructor/key-points.html</loc>
   </url>
   <url>
     <loc>https://ornl-training.github.io/git-novice-speedrun/instructor/profiles.html</loc>
   </url>
   <url>
     <loc>https://ornl-training.github.io/git-novice-speedrun/instructor/reference.html</loc>
+  </url>
+  <url>
+    <loc>https://ornl-training.github.io/git-novice-speedrun/instructor-notes.html</loc>
+  </url>
+  <url>
+    <loc>https://ornl-training.github.io/git-novice-speedrun/key-points.html</loc>
   </url>
   <url>
     <loc>https://ornl-training.github.io/git-novice-speedrun/profiles.html</loc>
