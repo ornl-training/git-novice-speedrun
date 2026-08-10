@@ -22,8 +22,6 @@ exercises: 0
 
 If you are participating in this workshop remotely (e.g. over Zoom), it is highly recommended that you use two screens: 1 screen with the remote meeting, to see the instructor sharing their screen, and 1 screen with your applications. You will need to have VS Code and a web browser open to https://code.ornl.gov in order to follow along.
 
-![Example Screen setup](fig/learner-setup-screenshot.png)
-
 :::::::::::::::::::::::::::::::::::::
 
 ## Software Installations
