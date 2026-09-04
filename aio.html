@@ -397,7 +397,7 @@
         
 <section id="aio-0_setup"><p>Content from <a href="0_setup.html">Setup Instructions</a></p>
 <hr>
-<p>Last updated on 2026-08-10 |
+<p>Last updated on 2026-09-04 |
 
         <a href="https://github.com/ornl-training/git-novice-speedrun/edit/main/episodes/0_setup.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -491,9 +491,32 @@ docs</a>.</p>
 </section><section><h2 class="section-heading" id="connect-vs-code-to-code-ornl-gov">Connect VS Code to code.ornl.gov<a class="anchor" aria-label="anchor" href="#connect-vs-code-to-code-ornl-gov"></a>
 </h2>
 <hr class="half-width">
-<p>Please refer to <a href="https://docs.gitlab.com/editor_extensions/visual_studio_code/setup/" class="external-link">these
-instructions</a> to sign in to GitLab from VS Code. Note that for the
-GitLab instance, you must use <a href="https://code.ornl.gov" class="external-link uri">https://code.ornl.gov</a>.</p>
+<p>First, you will need to open the <a href="https://code.ornl.gov/-/user_settings/ssh_keys" class="external-link">GitLab SSH Keys
+Page</a> and click “Add new key”. You will need to provide a private key
+to this form that can be generated with:</p>
+<div class="codewrapper sourceCode" id="cb2">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" tabindex="-1" aria-label="code-block-2-1"></a><span class="fu">ssh-keygen</span> <span class="at">-t</span> ed25519 <span class="at">-C</span> <span class="st">"your_email@ornl.gov"</span></span></code></pre>
+</div>
+<p>It will ask you a few questions, but the defaults are sufficient for
+our purposes. Once done, it will write a file to
+<code>$HOME/.ssh/id_ed25519</code>. You can read this file with:</p>
+<div class="codewrapper sourceCode" id="cb3">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" tabindex="-1" aria-label="code-block-3-1"></a><span class="fu">cat</span> <span class="va">$HOME</span>/.ssh/id_ed25519</span></code></pre>
+</div>
+<p>Copy the contents of the file with your computer’s clipboard, paste
+it into the GitLab form, and click “Add key”. Finally, we need to tell
+our computer to use this key when communicating with GitLab. We can do
+this by creating a file at <code>$HOME/.ssh/config</code> with the
+following contents:</p>
+<pre class="code"><code>Host code.ornl.gov
+  PreferredAuthentications publickey
+  IdentityFile /Users/qid/.ssh/id_ed25519</code></pre>
+<p>With this, your computer should be configured to communicate with
+GitLab properly.</p>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -2776,8 +2799,8 @@ any links that you are not going to use.
   "url": "https://ornl-training.github.io/git-novice-speedrun/aio.html",
   "identifier": "https://ornl-training.github.io/git-novice-speedrun/aio.html",
   "dateCreated": "2025-03-08",
-  "dateModified": "2026-09-01",
-  "datePublished": "2026-09-01"
+  "dateModified": "2026-09-04",
+  "datePublished": "2026-09-04"
 }
 
   </script><script>
