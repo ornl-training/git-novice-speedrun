@@ -70,6 +70,7 @@ Copy the contents of the file with your computer's clipboard, paste it into the 
 
 ```code
 Host code.ornl.gov
+  User git
   PreferredAuthentications publickey
   IdentityFile /Users/qid/.ssh/id_ed25519
 ```
