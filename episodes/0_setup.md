@@ -57,22 +57,23 @@ Rather than using a seperate command line application, you will be using the Ter
 First, you will need to open the [GitLab SSH Keys Page](https://code.ornl.gov/-/user_settings/ssh_keys) and click "Add new key". You will need to provide a private key to this form that can be generated with:
 
 ```bash
-ssh-keygen -t ed25519 -C "your_email@ornl.gov"
+ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519_carpentry -C "your_email@ornl.gov"
+chmod 600 ~/.ssh/id_ed25519_carpentry
 ```
 
 It will ask you a few questions, but the defaults are sufficient for our purposes. Once done, it will write a file to `$HOME/.ssh/id_ed25519`. You can read this file with:
 
 ```bash
-cat $HOME/.ssh/id_ed25519
+cat $HOME/.ssh/id_ed25519_carpentry
 ```
 
 Copy the contents of the file with your computer's clipboard, paste it into the GitLab form, and click "Add key". Finally, we need to tell our computer to use this key when communicating with GitLab. We can do this by creating a file at `$HOME/.ssh/config` with the following contents:
 
 ```code
-Host code.ornl.gov
+Host code
+  HostName code.ornl.gov
   User git
-  PreferredAuthentications publickey
-  IdentityFile /Users/qid/.ssh/id_ed25519
+  IdentityFile ~/.ssh/id_ed25519_carpentry
 ```
 
 With this, your computer should be configured to communicate with GitLab properly.
