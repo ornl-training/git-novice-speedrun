@@ -347,7 +347,7 @@
       </div>
     </nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Setup Instructions</h1>
-        <p>Last updated on 2026-09-21 |
+        <p>Last updated on 2026-09-28 |
 
         <a href="https://github.com/ornl-training/git-novice-speedrun/edit/main/episodes/0_setup.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -442,7 +442,8 @@ to this form that can be generated with:</p>
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" tabindex="-1" aria-label="code-block-2-1"></a><span class="fu">ssh-keygen</span> <span class="at">-t</span> ed25519 <span class="at">-C</span> <span class="st">"your_email@ornl.gov"</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" tabindex="-1" aria-label="code-block-2-1"></a><span class="fu">ssh-keygen</span> <span class="at">-t</span> ed25519 <span class="at">-f</span> ~/.ssh/id_ed25519_carpentry <span class="at">-C</span> <span class="st">"your_email@ornl.gov"</span></span>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1" aria-label="code-block-2-2"></a><span class="fu">chmod</span> 600 ~/.ssh/id_ed25519_carpentry</span></code></pre>
 </div>
 <p>It will ask you a few questions, but the defaults are sufficient for
 our purposes. Once done, it will write a file to
@@ -450,17 +451,17 @@ our purposes. Once done, it will write a file to
 <div class="codewrapper sourceCode" id="cb3">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" tabindex="-1" aria-label="code-block-3-1"></a><span class="fu">cat</span> <span class="va">$HOME</span>/.ssh/id_ed25519</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" tabindex="-1" aria-label="code-block-3-1"></a><span class="fu">cat</span> <span class="va">$HOME</span>/.ssh/id_ed25519_carpentry</span></code></pre>
 </div>
 <p>Copy the contents of the file with your computer’s clipboard, paste
 it into the GitLab form, and click “Add key”. Finally, we need to tell
 our computer to use this key when communicating with GitLab. We can do
 this by creating a file at <code>$HOME/.ssh/config</code> with the
 following contents:</p>
-<pre class="code"><code>Host code.ornl.gov
+<pre class="code"><code>Host code
+  HostName code.ornl.gov
   User git
-  PreferredAuthentications publickey
-  IdentityFile /Users/qid/.ssh/id_ed25519</code></pre>
+  IdentityFile ~/.ssh/id_ed25519_carpentry</code></pre>
 <p>With this, your computer should be configured to communicate with
 GitLab properly.</p>
 <div id="keypoints1" class="callout keypoints">
@@ -538,8 +539,8 @@ any links that you are not going to use.
   "url": "https://ornl-training.github.io/git-novice-speedrun/0_setup.html",
   "identifier": "https://ornl-training.github.io/git-novice-speedrun/0_setup.html",
   "dateCreated": "2025-03-08",
-  "dateModified": "2026-09-21",
-  "datePublished": "2026-09-22"
+  "dateModified": "2026-09-28",
+  "datePublished": "2026-09-28"
 }
 
   </script><script>
